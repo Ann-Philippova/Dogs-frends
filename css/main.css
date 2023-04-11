@@ -1,0 +1,356 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Montserrat:wght@400;500;600;700&display=swap');
+@import url(./media.css);
+@import './nav-icon.css';
+@import './mobile-nav.css';
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: #283618;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.none {
+	display: none !important;
+}
+
+.container {
+    max-width: 1400px;
+    padding: 0 100px 50px;
+    margin: 0 auto;
+    border-bottom: #ffffff solid 2px;
+}
+
+img {
+    width: 100%;
+    border-radius: 12px;
+    height: 100%;
+}
+
+/* Header */
+
+.header {
+    background-color: black;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+}
+
+.container-header {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.logo h1 {
+    font-style: 700;
+    font-size: 24px;
+    line-height: 29px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #BC6C25;
+}
+
+.nav-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 150px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+    column-gap: 115px;
+}
+
+.container-header a {
+    font-style: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+/* Search */
+
+.search-btn {
+    position: relative;
+    width: 300px;
+}
+
+.search {
+    background: #FFFFFF;
+    border-radius: 12px;
+    height: 50px;
+    width: 100%;
+    padding-left: 15px;
+}
+
+.button {
+    background: #DDA15E;
+    border-radius: 12px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #283618;
+    transition: background-color 0.2s ease-in;
+}
+
+.button--search {
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+}
+
+.btn-up {
+    position: fixed;
+    background-color: #DDA15E;
+    right: 100px;
+    bottom: 50px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 50px;
+  }
+  
+  .btn-up::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+  }
+  
+  .btn-up_hide {
+    display: none;
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .btn-up:hover {
+      background-color: #7a4910; /* цвет заднего фона при наведении */
+    }
+  }
+
+/*.arrow-up {
+    color: #DDA15E;
+    display: block;
+    display: none;
+    font-size: 20px;
+    font-weight: 600;
+    right: 50%;
+    margin-right: -750px;
+    padding-top: 80px;
+    position: fixed;
+    text-decoration: none;
+    text-transform: uppercase;
+    bottom: 35%;
+    z-index: 500;
+}
+
+.arrow-up:before {
+    background: rgba(0, 0, 0, 0),
+    url(./../img/logo/right.svg) no-repeat scroll 0 -100px;
+    content: "";
+    display: block;
+    height: 70px;
+    right: 50%;
+    margin-right: -20px;
+    position: absolute;
+    top: 0;
+    width: 40px;
+}*/
+
+/* Content */
+
+.content {
+    margin-top: 150px;
+    /*padding-bottom: 90px;*/
+    /*border-bottom: #DDA15E solid 1px;*/
+}
+
+.img-content {
+    padding-top: 30px;
+}
+
+.text-content {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.text-content__title {
+    margin-bottom: 60px;
+}
+
+.text-content__title h2 {
+    color: #DDA15E;
+    font-style: 400;
+    font-size: 38px;
+    line-height: 64px;
+    text-align: center;
+}
+
+.text-content h3 {
+    color: #DDA15E;
+    font-style: 400;
+    font-size: 30px;
+    line-height: 58px;
+    padding-top: 30px;
+}
+
+hr {
+        border: none;
+        color: #DDA15E;
+        background-color: #DDA15E;
+        height: 1px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+}
+
+b {
+    color: #DDA15E;
+}
+
+.text-content p {
+    font-style: 400;
+    font-size: 18px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+
+.text-content img {
+    margin: 60px 0;
+    width: 800px;
+}
+
+.text-content a {
+    color: #ff9e28;
+}
+
+/* Section cards */
+
+.section__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.card {
+    padding-bottom: 40px;
+}
+
+.card__img {
+    width: 100%;
+    height: 100%;
+}
+
+.card__title {
+    color: #ff9e28;
+    text-align: center;
+    padding-top: 20px;
+    font-style: 400;
+    font-size: 18px;
+    line-height: 24px
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 15px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+td {
+    padding: 25px;
+    color: #DDA15E;
+    font-style: 500;
+    font-size: 18px;
+    line-height: 22px;
+    border-bottom: #ffffff solid 2px;
+    border-top: #ffffff solid 2px;
+}
+
+/* Footer*/
+
+.footer {
+   
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1550px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-style: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+
+/* Search-btn__footer */
+
+.search-btn__footer {
+    position: relative;
+    width: 400px;
+    font-style: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.search__footer {
+    border-radius: 12px;
+    border: #FFFFFF solid 2px;
+    height: 50px;
+    padding: 15px 20px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.button--search__footer {
+    position: absolute;
+    width: 143px;
+    height: 50px;
+    padding: 15px 20px;
+    border-radius: 12px;
+    background: #DDA15E;
+    border-radius: 12px;
+    color: #fff;
+    transition: background-color 0.2s ease-in;
+}
+ 
+ /* Rating */
+
+ .rating {
+    padding-bottom: 40px;
+ }
+
+ .rating-dog a {
+    color: #fff;
+    font-style: 400;
+    font-size: 36px;
+    line-height: 60px;
+ }
+   
+ .dog-rating {
+    color: #FFFFFF;
+    font-style: 400;
+    font-size: 18px;
+    line-height: 34px;
+    padding-bottom: 40px;
+ }

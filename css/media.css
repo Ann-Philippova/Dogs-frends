@@ -1,0 +1,182 @@
+@media (max-width: 1610px) {
+    .footer-nav {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 1300px){
+    .logo h1 {
+        font-style: 500;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .container {
+        padding: 0 70px;
+    }
+}
+
+@media (max-width: 1270px){
+    .logo h1 {
+        font-style: 300;
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .container {
+        padding: 0 70px;
+    }
+
+    .section__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1100px) {
+    .container {
+        padding: 0 70px;
+    }
+
+    .text-content {
+        margin-top: 40px;
+    }
+
+    .text-content img {
+        margin-bottom: 40px;
+    }
+
+    .container-header {
+        justify-content: flex-start;
+		row-gap: 90px;
+        margin: 0 40px;
+    }
+
+    .text-content__title {
+        margin-bottom: 40px;
+    }
+
+    .mobile-nav-btn {
+		display: block;
+	}
+
+    .nav-list {
+		display: none;
+	}
+
+    .nav-list__item {
+        display: none;
+    }
+
+    .search-btn {
+        display: none;
+    }
+
+    .footer-nav {
+        margin: 0 40px;
+    }
+}
+
+@media (max-width: 950px) {
+    .container {
+        padding: 0 70px;
+    }
+
+    .img-content {
+        margin-bottom: 40px;
+    }
+
+    .text-content {
+        margin-top: 0;
+    }
+
+    .footer-nav {
+        margin: 0 40px;
+    }
+
+    .copyright {
+        margin-top:  40px;
+    }
+}
+
+@media (max-width: 800px) {
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        height: 130px;
+    }
+
+    .container-header {
+        
+    }
+
+    .container {
+        padding: 0 70px;
+    }
+
+    .logo {
+        margin-bottom: 50px;
+    }
+
+    .search-btn__footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .search-btn__footer button {
+        margin: 70px 0;
+    }
+
+    .logo h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    }
+
+@media (max-width: 750px) {
+        .container {
+            padding: 0 70px;
+        }
+
+        .text-content__title h2 {
+            font-size: 30px;
+        }
+
+        .btn-up {
+            right: 20px;
+        }
+
+        .section__cards {
+            display: grid;
+            grid-template-columns: 200px 200px;
+        }
+    }
+
+@media (max-width: 500px) {
+    .container {
+        padding: 0 70px;
+    }
+}
+
+@media (max-width: 380px) {
+    .header {
+        width: 400px;
+    }
+
+    .container-header {
+        padding: 30px 10px;
+        margin: 0 20px;
+    }
+
+    .content {
+        margin-top: 100px;
+    }
+
+    .container {
+        padding: 0 70px;
+    }
+}
